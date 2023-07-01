@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1581938165093-050aeb5ef218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #ffffff90;
+  padding: 30px;
+  border-radius: 5%;
+  box-shadow: 4px 4px 1px 0px #00000060;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c30573;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #c30573;
+  background-color: transparent;
+  outline: none;
+  min-width: 100px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #c30573;
+}
+
+.label-float label {
+  color: #c30573;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+  font-size: 13px;
+  margin-top: -5px;
+  color: #f666b9;
+}
+
+button {
+  background-color: transparent;
+  border-color: #c30573;
+  color: #c30573;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  width: 80%;
+}
+
+button:hover {
+  background-color: #c30573;
+  color: #c30573;
+}
+
+.justify-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-user-o,
+.fa-phone,
+.fa-envelope-o,
+.fa-eye,
+.fa-user-circle {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  color: #c30573;
+}
